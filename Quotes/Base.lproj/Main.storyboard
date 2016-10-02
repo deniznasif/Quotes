@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_dark" translatesAutoresizingMaskIntoConstraints="NO" id="JlI-ut-VGx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="tD9-iu-0ug"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotecard" translatesAutoresizingMaskIntoConstraints="NO" id="fvl-Wu-4Ia">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="488" id="qcW-ac-Lkh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-2u-kKq">
+                                <color key="backgroundColor" red="0.23332634228187921" green="0.20076552013422772" blue="0.26389471476510068" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Inspire Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inspireButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b88-Ak-BjF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lN-7E-SDr">
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_steve" translatesAutoresizingMaskIntoConstraints="NO" id="SYN-UY-XZK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Gru-wd-MSD"/>
+                                    <constraint firstAttribute="width" constant="80" id="Psm-ol-4yA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iky-nH-llW">
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.1450980392" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iky-nH-llW" firstAttribute="leading" secondItem="fvl-Wu-4Ia" secondAttribute="trailing" constant="-228" id="3WR-yZ-7hU"/>
+                            <constraint firstItem="iky-nH-llW" firstAttribute="leading" secondItem="SYN-UY-XZK" secondAttribute="trailing" constant="15" id="DSx-ag-vu0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fvl-Wu-4Ia" secondAttribute="leading" id="F4G-bF-UVk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JlI-ut-VGx" secondAttribute="trailing" id="GmJ-oV-9dT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Enp-2u-kKq" secondAttribute="trailing" id="Iev-pj-TCH"/>
+                            <constraint firstItem="fvl-Wu-4Ia" firstAttribute="top" secondItem="JlI-ut-VGx" secondAttribute="bottom" constant="8" id="L4y-uC-QK6"/>
+                            <constraint firstItem="1lN-7E-SDr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="174" id="PKU-CC-IWQ"/>
+                            <constraint firstItem="1lN-7E-SDr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="QnB-uN-y3j"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JlI-ut-VGx" secondAttribute="leading" id="SU9-gc-cQS"/>
+                            <constraint firstItem="iky-nH-llW" firstAttribute="top" secondItem="fvl-Wu-4Ia" secondAttribute="bottom" constant="-83" id="Wg0-J4-6cI"/>
+                            <constraint firstItem="SYN-UY-XZK" firstAttribute="top" secondItem="1lN-7E-SDr" secondAttribute="bottom" constant="14" id="XOV-gd-QGF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Enp-2u-kKq" secondAttribute="bottom" constant="20" id="ZDc-mq-O8e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fvl-Wu-4Ia" secondAttribute="trailing" id="ahh-NW-BqT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1lN-7E-SDr" secondAttribute="trailing" constant="21" id="dwf-TV-Pqy"/>
+                            <constraint firstItem="Enp-2u-kKq" firstAttribute="top" secondItem="fvl-Wu-4Ia" secondAttribute="bottom" constant="26" id="gBT-vR-ATq"/>
+                            <constraint firstItem="SYN-UY-XZK" firstAttribute="top" secondItem="fvl-Wu-4Ia" secondAttribute="bottom" constant="-113" id="jzk-Zt-Up2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Enp-2u-kKq" secondAttribute="leading" id="oIX-OC-WJZ"/>
+                            <constraint firstItem="JlI-ut-VGx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="wD3-TJ-NgW"/>
+                            <constraint firstItem="fvl-Wu-4Ia" firstAttribute="leading" secondItem="SYN-UY-XZK" secondAttribute="trailing" constant="-100" id="zO1-2r-Tby"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inspireMeButton" destination="Enp-2u-kKq" id="Uzc-cf-K3s"/>
+                        <outlet property="quoteAuthorImage" destination="SYN-UY-XZK" id="109-0f-qCF"/>
+                        <outlet property="quoteAuthorLabel" destination="iky-nH-llW" id="GVv-BN-0M2"/>
+                        <outlet property="quoteLabel" destination="1lN-7E-SDr" id="WpC-Cp-4i8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_dark" width="117" height="41"/>
+        <image name="quotecard" width="361" height="484"/>
+        <image name="thumb_steve" width="80" height="80"/>
+    </resources>
+</document>
